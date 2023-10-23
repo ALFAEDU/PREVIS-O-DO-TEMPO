@@ -1,5 +1,5 @@
 const apiKey = "b848e9c88e90c978aa07722cdfa0e422";
-const apiCoutryURL = "https://www.countryflagicons.com/FLAT/24/";
+const apiCoutryURL = "https://restcountries.com/v3/alpha/";
 
 
 const cityInput = document.querySelector("#city-input");
@@ -41,7 +41,7 @@ const showWeathearData = async (city) => {
     tempElement.innerText = parseInt(data.main.temp);
     descElement.innerText = data.weather[0].description;
     weatherIconElement.setAttribute("src",`http://openweathermap.org/img/wn/${data.weather[0].icon}.png`);
-    countryElement.setAttribute("src", `https://www.countryflagicons.com/FLAT/24/${data.sys.country}.png`);
+    countryElement.setAttribute("src", `https://restcountries.com/v3/alpha/${data.sys.country}.png`);
     humidityElement.innerText = `${data.main.humidity}%`;
     windElement.innerText = `${data.wind.speed}km/h`;
     weatherContainer.classList.remove("hide");
