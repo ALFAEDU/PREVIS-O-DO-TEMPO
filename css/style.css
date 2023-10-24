@@ -74,9 +74,6 @@ body{
     margin: 0.6rem;
 }
 
-.country{
-    height: 24px;
-}
 
 #description-container{
     display: flex;
